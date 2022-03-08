@@ -3,6 +3,7 @@
     <NavBar/>
     <ContentSection/>
     <BlueSection/>
+    <LinksSection/>
   </div>
 </template>
 
@@ -10,13 +11,15 @@
 import NavBar from './components/NavBar.vue'
 import ContentSection from './components/ContentSection.vue'
 import BlueSection from './components/BlueSection.vue'
+import LinksSection from './components/LinksSection.vue'
 
 export default {
   name: 'App',
   components: {
     NavBar,
     ContentSection,
-    BlueSection
+    BlueSection,
+    LinksSection
   }
 }
 </script>
