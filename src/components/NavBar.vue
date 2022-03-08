@@ -5,10 +5,12 @@
         </div>
         <div class="navbar_items">
             <ul class="navbar_items_list">
-                <li class="navbar_item">
-                    characters
+                <li v-for="(option, i) in options" :key="i" class="navbar_item">
+                    <a>
+                        {{option.text}}
+                    </a>
                 </li>
-                <li class="navbar_item active">
+                <!-- <li class="navbar_item active">
                     comics
                 </li>
                 <li class="navbar_item">
@@ -34,7 +36,7 @@
                 </li>
                 <li class="navbar_item">
                     shop
-                </li>
+                </li> -->
             </ul>
         </div>
     </div>
@@ -43,7 +45,51 @@
 <script>
 export default {
   name: 'NavBar',
-  props: {
+  data(){
+    return{
+        options:[
+            {
+                text:'characters',
+                href:'#',
+            },
+            {
+                text:'comics',
+                href:'#',
+            },
+            {
+                text:'movies',
+                href:'#',
+            },
+            {
+                text:'tv',
+                href:'#',
+            },
+            {
+                text:'games',
+                href:'#',
+            },
+            {
+                text:'collection',
+                href:'#',
+            },
+            {
+                text:'videos',
+                href:'#',
+            },
+            {
+                text:'fans',
+                href:'#',
+            },
+            {
+                text:'news',
+                href:'#',
+            },
+            {
+                text:'shop',
+                href:'#',
+            },
+        ]
+    }
   }
 }
 </script>

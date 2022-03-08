@@ -23,7 +23,7 @@ export default {
     BlueSection,
     LinksSection,
     SocialBar
-  }
+  },
 }
 </script>
 
