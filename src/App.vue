@@ -1,16 +1,19 @@
 <template>
   <div id="app">
     <NavBar/>
+    <ContentSection/>
   </div>
 </template>
 
 <script>
 import NavBar from './components/NavBar.vue'
+import ContentSection from './components/ContentSection.vue'
 
 export default {
   name: 'App',
   components: {
-    NavBar
+    NavBar,
+    ContentSection
   }
 }
 </script>
