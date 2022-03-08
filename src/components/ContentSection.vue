@@ -1,14 +1,17 @@
 <template>
     <div class="content_section">
-        <h4>Content goes here</h4>
+        <h4> Content goes here --></h4>
     </div>
 </template>
 
 <script>
 export default {
     name: 'ContentSection',
-  props: {
-  }
+    contents:[
+        {
+            text:'<!-- Content goes here -->',
+        }
+    ]
 }
 </script>
 

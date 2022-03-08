@@ -1,46 +1,46 @@
 <template>
     <div class="blue_section">
         <ul>
-            <li>
+            <li v-for="(blueItem, i) in blueItems" :key="i">
                 <div class="blue_section_item-img">
                     <img src="../assets/img/buy-comics-digital-comics.png" alt="">
                 </div>
                 <div class="blue_section_item-text">
-                    digital comics
+                    {{blueItem.text}}
                 </div>
             </li>
-            <li>
+            <!-- <li v-for="(blueItem, i) in blueItems" :key="i">
                 <div class="blue_section_item-img">
                     <img src="../assets/img/buy-comics-merchandise.png" alt="">
                 </div>
                 <div class="blue_section_item-text">
-                    dc merchandise
+                    {{blueItem.text}}
                 </div>
             </li>
-            <li>
+            <li v-for="(blueItem, i) in blueItems" :key="i">
                 <div class="blue_section_item-img">
                     <img src="../assets/img/buy-comics-subscriptions.png" alt="">
                 </div>
                 <div class="blue_section_item-text">
-                    sbuscription
+                    {{blueItem.text}}
                 </div>
             </li>
-            <li>
+            <li v-for="(blueItem, i) in blueItems" :key="i">
                 <div class="blue_section_item-img">
                     <img src="../assets/img/buy-comics-shop-locator.png" alt="">
                 </div>
                 <div class="blue_section_item-text">
-                    comic shop location
+                    {{blueItem.text}}
                 </div>
             </li>
-            <li>
+            <li v-for="(blueItem, i) in blueItems" :key="i">
                 <div class="blue_section_item-img">
                     <img src="../assets/img/buy-dc-power-visa.svg" alt="">
                 </div>
                 <div class="blue_section_item-text">
-                    dc power visa
+                    {{blueItem.text}}
                 </div>
-            </li>
+            </li> -->
         </ul>
     </div>
 </template>
@@ -48,8 +48,27 @@
 <script>
 export default {
     name: 'BlueSection',
-  props: {
-  }
+    data(){
+        return{
+            blueItems:[
+                {
+                    text: 'digital comics',
+                },
+                {
+                    text: 'dc merchandise',
+                },
+                {
+                    text: 'subscription',
+                },
+                {
+                    text: 'comic shop location',
+                },
+                {
+                    text: 'dc power visa',
+                },
+            ]
+        }
+    }
 }
 </script>
 
