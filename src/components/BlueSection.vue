@@ -57,7 +57,7 @@ export default {
     .blue_section{
         background-color: #0D7DEC;
         width: 100%;
-        padding: 50px 0px;
+        padding: 30px 0px;
         ul{
             height: 100%;
             list-style: none;
