@@ -4,6 +4,7 @@
     <ContentSection/>
     <BlueSection/>
     <LinksSection/>
+    <SocialBar/>
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import NavBar from './components/NavBar.vue'
 import ContentSection from './components/ContentSection.vue'
 import BlueSection from './components/BlueSection.vue'
 import LinksSection from './components/LinksSection.vue'
+import SocialBar from './components/SocialBar.vue'
 
 export default {
   name: 'App',
@@ -19,7 +21,8 @@ export default {
     NavBar,
     ContentSection,
     BlueSection,
-    LinksSection
+    LinksSection,
+    SocialBar
   }
 }
 </script>
