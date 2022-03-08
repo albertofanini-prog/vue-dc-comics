@@ -50,7 +50,7 @@ export default {
 
 <style scoped lang="scss">
     .navbar_container{
-        border: 3px solid green;
+        // border: 3px solid green;
         height: 100px;
         display: flex;
         justify-content: space-around;
@@ -58,7 +58,7 @@ export default {
         padding: 0px 10%;
     }
     .navbar_container > *{
-        border: 2px solid red;
+        // border: 2px solid red;
         height: 100%;
         display: flex;
         align-items: center;
