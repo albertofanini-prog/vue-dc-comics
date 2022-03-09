@@ -9,38 +9,6 @@
                     {{blueItem.text}}
                 </div>
             </li>
-            <!-- <li v-for="(blueItem, i) in blueItems" :key="i">
-                <div class="blue_section_item-img">
-                    <img src="../assets/img/buy-comics-merchandise.png" alt="">
-                </div>
-                <div class="blue_section_item-text">
-                    {{blueItem.text}}
-                </div>
-            </li>
-            <li v-for="(blueItem, i) in blueItems" :key="i">
-                <div class="blue_section_item-img">
-                    <img src="../assets/img/buy-comics-subscriptions.png" alt="">
-                </div>
-                <div class="blue_section_item-text">
-                    {{blueItem.text}}
-                </div>
-            </li>
-            <li v-for="(blueItem, i) in blueItems" :key="i">
-                <div class="blue_section_item-img">
-                    <img src="../assets/img/buy-comics-shop-locator.png" alt="">
-                </div>
-                <div class="blue_section_item-text">
-                    {{blueItem.text}}
-                </div>
-            </li>
-            <li v-for="(blueItem, i) in blueItems" :key="i">
-                <div class="blue_section_item-img">
-                    <img src="../assets/img/buy-dc-power-visa.svg" alt="">
-                </div>
-                <div class="blue_section_item-text">
-                    {{blueItem.text}}
-                </div>
-            </li> -->
         </ul>
     </div>
 </template>

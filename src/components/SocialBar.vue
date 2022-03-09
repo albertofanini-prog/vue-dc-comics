@@ -7,11 +7,7 @@
         </div>
         <div class="social_icons">
             <h6>follow us</h6>
-            <img src="../assets/img/footer-facebook.png" alt="">
-            <img src="../assets/img/footer-twitter.png" alt="">
-            <img src="../assets/img/footer-youtube.png" alt="">
-            <img src="../assets/img/footer-periscope.png" alt="">
-            <img src="../assets/img/footer-periscope.png" alt="">
+            <img v-for="(social, i) in socials" :key="i" :src="social.src">
         </div>
     </div>
 </template>
@@ -19,7 +15,26 @@
 <script>
 export default {
     name: 'SocialBar',
-    props: {
+    data(){
+        return{
+            socials: [
+                {
+                    src: require('../assets/img/footer-facebook.png'),
+                },
+                {
+                    src: require('../assets/img/footer-twitter.png'),
+                },
+                {
+                    src: require('../assets/img/footer-youtube.png'),
+                },
+                {
+                    src: require('../assets/img/footer-periscope.png'),
+                },
+                {
+                    src: require('../assets/img/footer-pinterest.png'),
+                }
+            ]
+        }
     }
 }
 </script>
