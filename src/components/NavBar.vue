@@ -5,38 +5,11 @@
         </div>
         <div class="navbar_items">
             <ul class="navbar_items_list">
-                <li v-for="(option, i) in options" :key="i" class="navbar_item">
+                <li v-for="(option, i) in options" :key="i" class="navbar_item" :class="option.active ? 'active' : '' ">
                     <a>
                         {{option.text}}
                     </a>
                 </li>
-                <!-- <li class="navbar_item active">
-                    comics
-                </li>
-                <li class="navbar_item">
-                    movies
-                </li>
-                <li class="navbar_item">
-                    tv
-                </li>
-                <li class="navbar_item">
-                    games
-                </li>
-                <li class="navbar_item">
-                    collectibles
-                </li>
-                <li class="navbar_item">
-                    videos
-                </li>
-                <li class="navbar_item">
-                    fans
-                </li>
-                <li class="navbar_item">
-                    news
-                </li>
-                <li class="navbar_item">
-                    shop
-                </li> -->
             </ul>
         </div>
     </div>
@@ -55,6 +28,7 @@ export default {
             {
                 text:'comics',
                 href:'#',
+                active: true,
             },
             {
                 text:'movies',
@@ -135,7 +109,7 @@ export default {
         color: #0D7DEC;
     }
     .navbar_item{
-        height: 100%;
+        height: 95%;
         display: flex;
         align-items: center;
     }
