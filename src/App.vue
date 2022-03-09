@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <NavBar/>
+    <JumbotronSlider/>
     <ContentSection/>
     <BlueSection/>
     <LinksSection/>
@@ -14,11 +15,13 @@ import ContentSection from './components/ContentSection.vue'
 import BlueSection from './components/BlueSection.vue'
 import LinksSection from './components/LinksSection.vue'
 import SocialBar from './components/SocialBar.vue'
+import JumbotronSlider from './components/jumbotronSlider.vue'
 
 export default {
   name: 'App',
   components: {
     NavBar,
+    JumbotronSlider,
     ContentSection,
     BlueSection,
     LinksSection,
