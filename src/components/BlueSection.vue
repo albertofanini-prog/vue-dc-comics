@@ -3,7 +3,7 @@
         <ul>
             <li v-for="(blueItem, i) in blueItems" :key="i">
                 <div class="blue_section_item-img">
-                    <img src="../assets/img/buy-comics-digital-comics.png" alt="">
+                    <img :src="blueItem.src" alt="">
                 </div>
                 <div class="blue_section_item-text">
                     {{blueItem.text}}
@@ -53,18 +53,23 @@ export default {
             blueItems:[
                 {
                     text: 'digital comics',
+                    src: require('../assets/img/buy-comics-digital-comics.png'),
                 },
                 {
                     text: 'dc merchandise',
+                    src: require('../assets/img/buy-comics-merchandise.png'),
                 },
                 {
                     text: 'subscription',
+                    src: require('../assets/img/buy-comics-shop-locator.png'),
                 },
                 {
                     text: 'comic shop location',
+                    src: require('../assets/img/buy-comics-shop-locator.png'),
                 },
                 {
                     text: 'dc power visa',
+                    src: require('../assets/img/buy-dc-power-visa.svg'),
                 },
             ]
         }

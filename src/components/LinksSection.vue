@@ -159,8 +159,10 @@
 <script>
 export default {
     name: 'LinksSection',
-    props: {
-
+    data(){
+        return{
+            
+        }
     }
 }
 </script>
